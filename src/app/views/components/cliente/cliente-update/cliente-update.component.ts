@@ -38,7 +38,7 @@ export class ClienteUpdateComponent implements OnInit {
     this.service.update(this.cliente).subscribe(
       (resposta) => {
         this.router.navigate(["clientes"]);
-        this.service.message("Técnico atualizado com sucesso!");
+        this.service.message("Cliente atualizado com sucesso!");
       },
       err => {
         if (err.error.error.match("já cadastrado")) {

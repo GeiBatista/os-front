@@ -14,7 +14,7 @@ export class ClienteReadComponent implements AfterViewInit {
 
 clientes: Cliente[] = [];
 
-  displayedColumns: string[] = ['id', 'nome', 'cpf', 'telefone'];
+  displayedColumns: string[] = ['id', 'nome', 'cpf', 'telefone', 'action'];
   dataSource = new MatTableDataSource<Cliente>(this.clientes);
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
